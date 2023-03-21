@@ -1,7 +1,7 @@
-import './newExpense.css';
+import './NewExpense.css';
 import ExpenseForm from './ExpenseForm';
 
-function newExpense(){
+function NewExpense(){
    return (
     <div className='new-expense'>
         <ExpenseForm />
@@ -9,4 +9,4 @@ function newExpense(){
    )
 }
 
-export default newExpense;
+export default NewExpense;
