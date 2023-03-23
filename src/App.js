@@ -20,9 +20,12 @@ function App() {
       date: new Date(2023,1,21)
     }
   ];
+  const addExpenseHandler = expense=>{
+    expenseItem.concat(expense);
+  }
   return (
     <div>
-      <NewExpense></NewExpense>
+      <NewExpense onAddExpense={addExpenseHandler}></NewExpense>
       <Expense items={expenseItem}></Expense>
     </div>  
   );
