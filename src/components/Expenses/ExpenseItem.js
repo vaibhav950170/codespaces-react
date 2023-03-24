@@ -11,7 +11,7 @@ function ExpenseItem(data) {
     //     setTitle('Updated!!.');
     //     console.log("Clicked!!!!");
     // }
-    return (<Card className='expense-item'>
+    return (<li><Card className='expense-item'>
         <div>
             <ExpenseDate date = {data.date}></ExpenseDate>
         </div>
@@ -22,7 +22,8 @@ function ExpenseItem(data) {
         {/* <button onClick={clickHandler}>
             Change title
             </button> */}
-    </Card>);
+    </Card>
+    </li>);
 }
 
 export default ExpenseItem;
